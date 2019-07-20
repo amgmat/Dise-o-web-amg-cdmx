@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+}
+
+header h1 {
+    margin-top: -105px;
+    padding: 5px 25px;
+    font-family: serif;
+}
+
+header nav.menu {
+    text-align: right;
+    font-size: 18px;
+}
+
+header .menu li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 30px 15px;
+    padding: 10px;
+    position: relative;
+}
+
+header .menu .children {
+    display: none;
+    background: #fff3ff;
+    position: absolute;
+    z-index: 1000;
+    width: 300%;
+}
+
+header .menu .children li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 252, .5);
+    text-align: left;
+}
+
+header .menu li:hover {
+    text-decoration: underline;
+}
+
+header .menu li:hover .children {
+    display: block;
+}
+
+.contenedor {
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+    background: url('../img/diseno2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    height: 570px;
+    font-size: 30px;
+}
+
+.contenedor .presentacion {
+    padding: 60px;
+}
+
+.carousel .carousel-item .contenido p {
+    font-size: 22px;
+}
+
+.description {
+    width: 90%;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.cotizando {
+    text-align: center;
+    color: #FF8000;
+    font-size: 30px;
+}
+
+.cotizando .redes-sociales {
+    font-size: 40px;
+}
+
+.cotizando .redes-sociales a {
+    margin: 0px 20px;
+    padding: 20px;
+}
+
+footer .copyright {
+    background: #000;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+    header h1 {
+        padding: 5px 15px;
+    }
+    header .menu li {
+        margin: 30px 5px;
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header h1 {
+        padding: 0px 10px;
+        margin-top: -20px;
+        text-align: center;
+    }
+    header nav.menu {
+        text-align: center;
+        font-size: 16px;
+    }
+    header nav.menu li {
+        display: inline-block;
+        text-decoration: none;
+        margin: 20px 6px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        padding: 4px 8px;
+        margin-top: -10px;
+    }
+    header nav.menu {
+        font-size: 14px;
+    }
+    header nav.menu li {
+        margin: 15px 6px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header h1 {
+        padding: 2px 6px;
+        margin-top: 0px;
+    }
+    header nav.menu {
+        font-size: 12px;
+    }
+}
